@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Brgy.Poblacion Dinas</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Brgy.Poblacion Dinas">
+	<meta name="keywords" content="Brgy.Poblacion Dinas, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link rel="shortcut icon" href="image/logos.png">
+	<link rel="stylesheet" href="dropitem.css">
+	<link rel="stylesheet" href="css/form.css">
+
+
+</head>
+
+<body>
+	<div class="navbar">
+	  <a href="index.html">Statical Status 📈</a>
+	  <a href="data_entry.html">Data Entry 💾</a>
+	  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()" class="active">Files 📁
+	  </button>
+	  <div class="dropdown-content" id="myDropdown">
+		<a href="docs1.html">RBI 🗎</a>
+		<a href="docs2.html">Documents 2 🗎</a>
+	  </div>
+	  </div> 
+	  <a href="request.html">Reserve 🗎</a>
+	  <a href="../index.html" class="btn" style="float: right">Logout</a>
+	</div>
+	
+	<br><br>
+        <br><br> 
+	
+	
+	
+	<div class="row">
+	  <div class="col-75">
+		<div class="container">
+			<img src="image/logos.png" style="float:right" alt="header"width="45"height="45">
+			<h3>Billing Address</h3>
+			<div class="row">
+				<table class="list" id="employeeList">
+							<thead>
+								<tr>
+									<th>File Type</th>
+									<th>File name</th>
+									<th>File Size</th>
+									<th>Download</th>
+									<th>Print</th>
+								</tr>
+							</thead>
+							<tbody>								
+							</tbody>
+						</table>
+			  
+			</div>
+
+		</div>
+	  </div>
+	  <div class="col-25">
+		<div class="container">
+			
+			<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+				<br>
+						<div>
+							<label>Save files</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+							<input type="file" id="myFile" name="filename">
+						</div>
+						<div>
+						
+							
+
+							<div  class="form-action-buttons">
+							<input type="submit" value="Save" class="btn">						
+							</div>
+						
+						</div>
+			</form>
+		 </div>
+	   </div>
+    </div>
+
+
+
+<script src="js/script.js"></script>
+<script src="js/dropitem.js"></script>
+
+</body>
+</html>

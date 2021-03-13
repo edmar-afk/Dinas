@@ -1,0 +1,920 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Brgy.Poblacion Dinas</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Brgy.Poblacion Dinas">
+	<meta name="keywords" content="Brgy.Poblacion Dinas, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/dropdown.css"/>
+	<link rel="stylesheet" href="css/style2.css"/>
+	<link rel= "stylesheet" href="css/form.css">
+	<link rel= "stylesheet" href="css/css.css">
+	<link rel= "stylesheet" href="css/login.css">
+
+</head>
+<body>
+	<div class="loader_bg">
+		<div class="loader"><img src="img/logos.gif" alt="" /></div>
+	</div>
+
+<!-- Header section -->
+	<header class="header-section" id="header">
+		<div class="header-warp">
+			<div class="container">
+				<a href="#" class="site-logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<!-- popup login -->
+				<div class="user-panel">
+				<a href="#" onclick ="openForm()">Login</a>
+					<div class="form-popup" id="myForm">
+						<script>
+						function validateFormEmail() {
+						  var a = document.myform.Username.value;
+						  var b = document.myform.Password.value;
+
+						var apos=a.indexOf("@");
+						var dotpos=a.lastIndexOf(".");
+
+						  if (apos<1||dotpos-apos<2){
+							alert("Invalid Email!");
+							return false;
+						  }
+						  else if (b == null||b == "") 
+						  {
+							alert("Invalid Password");
+							return false;
+						 
+						  }
+						}
+						</script>
+							<div class="form-container">
+								<a href="#" class="site-logo">
+									<img src="img/logo1.png" alt="">
+								</a>
+								<p>Please login</p>
+									<form name="myform" action="users/index.html" onsubmit="return validateFormEmail()" method="post">
+									<label for = "Username">DNHS | LIBRARY LOGIN</label>
+									<br>
+									<br>
+									<input type="text" id="Username" name="Username" placeholder="username@pdw.gov">
+									<br>
+									<label for="Password"></label>
+									<input type="password" id="Password" name="Password" placeholder="Enter password">
+									<br>
+									
+									  <button type="submit" class="btn">Login</button>
+									  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+									</form>
+							</div>
+					  					  
+					</div>
+				</div>
+				<!-- popup login end -->
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+
+				<ul class="main-menu">
+					<li><a href="index.html"style="color:#f3e830">Home</a></li>
+					
+					<li><div class="dropdown">
+						<a href="Reservation.html" >Reservation</a>
+						  <div class="dropdown-content">
+						  <a href="LSI.html" target="_blank" style="font-size: 13px">(LSI) form</a>
+						  <a href="Reservation.html"style="font-size: 13px">Request</a>
+						  </div>
+						</div>
+					</li>	
+					<li><div class="dropdown">
+						<a href="Populations.html">Populations</a>
+						   <div class="dropdown-content">
+						  <a href="Populations.html"style="font-size: 13px">Officials</a>
+						  <a href="Populations.html"style="font-size: 13px">Local Map</a>
+						  <a href="charts/brgy.html" target="_blank"style="font-size: 13px">Brgy. Map</a>
+						  </div>
+						</div>
+					</li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+	
+	<section class="hero-section set-bg" data-setbg="img/bg.jpeg">
+		<div class="container text-white">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="hero-text text-white">
+					<div class="superman-author">
+						<div class="superman-author-pic set-bg" data-setbg="img/capitan.png"></div>	
+					</div>
+					<br>
+					<br>
+					<h3 style="font-size:280%;">Punong</h3><h3 style="font-size:300%;">Barangay</h3>
+					
+					<p style="color:#f3e830;">Cristina Chavez </p><br>
+					<p style="font-size:90%;"> <br><i class="fa fa-user-md" style="font-size: 28px"></i> : Medical Doctor at Chavez Medical Clinic 
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : Studied at University of the East (UE)
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : Studied at Saint Columban College
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : Studied at De La Salle Health Sciences
+					</p>
+					<div class="hero-author">
+						<div class="hero-author-pic set-bg" data-setbg="img/logos.png"></div>
+						<h5>Brgy.Poblacion Dinas | <span>Zambo. sur</span></h5>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+		<!-- course -->
+		<br>
+			<div class="container text-white">
+				<h3 style="color:black;">Barangay Poblacion | News feed</h3>
+				
+			</div>
+			
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
+                    <div class="blog-entry">
+                    <a href="blog-single.html" class="img-link">
+                        <img src="img/index/1.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="blog-entry-contents"> 
+                        <h3><a href="#">Womens event party and social gathering</a></h3>
+                        <div class="meta">Posted by <a href="#">Admin</a> In <a href="#">News</a></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
+                    <div class="blog-entry">
+                    <a href="blog-single.html" class="img-link">
+                        <img src="img/index/2.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="blog-entry-contents">
+                        <h3><a href="#">Brgy. Poblacion Peace and Order assembly cooperation with PGMIT</a></h3>
+                        <div class="meta">Posted by <a href="#">Admin</a> In <a href="#">News</a></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
+                    <div class="blog-entry">
+                    <a href="blog-single.html" class="img-link">
+                        <img src="img/index/3.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="blog-entry-contents">
+                        <h3><a href="#">Liga ng Barangay Sport event, champion purok camia</a></h3>
+                        <div class="meta">Posted by <a href="#">Admin</a> In <a href="#">News</a></div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
+                    <div class="blog-entry">
+                    <a href="blog-single.html" class="img-link">
+                        <img src="img/index/4.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="blog-entry-contents">
+                        <h3><a href="#">During Barangay Session and meetings</a></h3>
+                        <div class="meta">Posted by <a href="#">Admin</a> In <a href="#">News</a></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
+                    <div class="blog-entry">
+                    <a href="blog-single.html" class="img-link">
+                        <img src="img/index/5.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="blog-entry-contents">
+                        <h3><a href="#">Barangay Assembly, Makialam, Makilahok, Makiisa</a></h3>
+                        <div class="meta">Posted by <a href="#">Admin</a> In <a href="#">News</a></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-5 col-lg-4">
+                    <div class="blog-entry">
+                    <a href="blog-single.html" class="img-link">
+                        <img src="img/index/6.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="blog-entry-contents">
+                        <h3><a href="#">Barangay Assembly, Barangay Sama-samang paunlarin</a></h3>
+                        <div class="meta">Posted by <a href="#">Admin</a> In <a href="#">News</a></div>
+                    </div>
+                    </div>
+                </div>                
+            </div>   
+        </div>
+    </div>
+	<!-- Courses section end -->
+	
+	<!-- Appointment section -->
+	<section class="newslatter-section set-bg" data-setbg="img/newslatter-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="sec-title text-white sec-style-2">
+						<span>Brgy. Poblacion</span>
+						<h2>Google Map</h2>
+					</div>
+				</div>
+
+				<div class="col-lg-9 nl-form-warp">
+					<div class="text-center">
+						<a href="#header" class="site-btn">Return <i class="fa fa-angle-right"></i></a>
+					</div>
+						
+					<p><b>A map is a symbolic depiction emphasizing relationships 
+					between elements of some space, such as objects, regions, or themes. </b></p>
+				</div>
+			</div>
+		</div>
+
+	<!-- Appointment section end -->
+	
+	<!-- map  -->
+
+		<div class="container">
+			<div class="row courses-page">
+				<!-- brgy map -->
+				<div class="col-lg-12">
+					<div class="course-item featured">
+						<div class="course-preview set-bg"<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.5262894110074!2d123.33803231627094!3d7.6154226089117225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMzYnNTUuOSJOIDEyM8KwMjAnMTkuMiJF!5e1!3m2!1sen!2sph!4v1604976290056!5m2!1sen!2sph"
+						width="1147" height="540" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<div class="featur-badges">Poblacion Dinas <i class="fa fa-map-marker"></i></div>	
+						</div>
+					</div>
+						
+				</div>
+				<!-- barangay end-->	
+			</div>
+			
+		</div>
+	</section>
+		<br>
+		<br>
+	<!-- map end -->
+	
+	<!-- Calendar -->
+	
+		
+				<div class="sec-title text-center">
+					<span>Knowledge is power</span>
+					<h2>Event Calendar</h2>
+				</div>
+			<div class="course-slider owl-carousel">	
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<div class="price">Year of the OX </div>
+					
+							<div class="month">      
+							  <ul>
+								<li>
+								  JANUARY<br>
+								  <span style="font-size:15px">2021</span>
+								</li>
+							  </ul>
+							</div>
+
+							<ul class="weekdays">
+							  <li>Mo</li>
+							  <li>Tu</li>
+							  <li>We</li>
+							  <li>Th</li>
+							  <li>Fr</li>
+							  <li>Sa</li>
+							  <li><span style="color:red">Su</span></li>
+							</ul>
+							<ul class="days">  
+							  <li><span style="color:gray">28</span></li>
+							  <li><span style="color:gray">29</span></li>
+							  <li><span style="color:gray">30</span></li>
+							  <li><span style="color:gray">31</span></li>
+							  <li><div class="dropdown">
+									<a href="Transactions.html"span class="active" >1</a>
+									<div class="dropdown-content">
+									<a style="font-size: 20px">New Year's day</a>
+									</div>
+									</div></li>
+							  <li>2</li>
+							  <li>3</li>
+							  <li>4</li>
+							  <li>5</li>
+							  <li>6</li>
+							  <li>7</li>
+							  <li>8</li>
+							  <li>9</li>
+							  <li>10</li>
+							  <li>11</li>
+							  <li>12</li>
+							  <li>13</li>
+							  <li>14</li>
+							  <li>15</li>
+							  <li>16</li>
+							  <li>17</li>
+							  <li>18</li>
+							  <li>19</li>
+							  <li>20</li>
+							  <li>21</li>
+							  <li>22</li>
+							  <li>23</li>
+							  <li>24</li>
+							  <li>25</li>
+							  <li>26</li>
+							  <li>27</li>
+							  <li>29</li>
+							  <li>30</li>
+							  <li>31</li>
+							  <li><span style="color:gray">1</span></li>
+							  <li><span style="color:gray">2</span></li>
+							  <li><span style="color:gray">3</span></li>
+							  <li><span style="color:gray">4</span></li>
+							  <li><span style="color:gray">5</span></li>
+							  <li><span style="color:gray">6</span></li>
+							  <li><span style="color:gray">7</span></li>
+							  <li><span style="color:gray">8</span></li>
+							</ul>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Daily Update</h5>
+							<p style="color: black">New years preparation year of the ox </p>
+							<span><i class="fa fa-calendar"></i>2021</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							
+						</div>
+					</div>
+				</div>
+				<!-- course end-->
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<div class="price">Year of the OX </div>
+					
+					
+							<div class="month">      
+							  <ul>
+								<li>
+								  FEBUARY<br>
+								  <span style="font-size:15px">2021</span>
+								</li>
+							  </ul>
+							</div>
+
+							<ul class="weekdays">
+							  <li>Mo</li>
+							  <li>Tu</li>
+							  <li>We</li>
+							  <li>Th</li>
+							  <li>Fr</li>
+							  <li>Sa</li>
+							  <li><span style="color:red">Su</span></li>
+							</ul>
+
+							<ul class="days">  
+							  <li>1</li>
+							  <li>2</li>
+							  <li>3</li>
+							  <li>4</li>
+							  <li>5</li>
+							  <li>6</li>
+							  <li>7</li>
+							  <li>8</li>
+							  <li>9</li>
+							  <li>10</li>
+							  <li>11</li>
+							  <li>12</li>
+							  <li>13</li>
+								<li><div class="dropdown">
+									<a href="Transactions.html"span class="active" >14</a>
+									<div class="dropdown-content">
+									<a style="font-size: 20px">Valentines Day</a>
+									</div>
+									</div></li>
+							  <li>15</li>
+							  <li>16</li>
+							  <li>17</li>
+							  <li>18</li>
+							  <li>19</li>
+							  <li>20</li>
+							  <li>21</li>
+							  <li>22</li>
+							  <li>23</li>
+							  <li>24</li>
+							  <li>25</li>
+							  <li>26</li>
+							  <li>27</li>
+							  <li>28</li>
+							  <li><span style="color:gray">1</span></li>
+							  <li><span style="color:gray">2</span></li>
+							  <li><span style="color:gray">3</span></li>
+							  <li><span style="color:gray">4</span></li>
+							  <li><span style="color:gray">5</span></li>
+							  <li><span style="color:gray">6</span></li>
+							  <li><span style="color:gray">7</span></li>
+							  <li><span style="color:gray">9</span></li>
+							  <li><span style="color:gray">10</span></li>
+							  <li><span style="color:gray">11</span></li>
+							  <li><span style="color:gray">12</span></li>
+							  <li><span style="color:gray">13</span></li>
+							  <li><span style="color:gray">14</span></li>
+							  <li><span style="color:gray">15</span></li>
+							</ul>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Daily Update</h5>
+							<p style="color: black">Bayanihan ni Juan, Barangay officials and functionaries. </p>
+							<span><i class="fa fa-calendar"></i>2021</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+						
+						</div>
+					</div>
+				</div>
+				<!-- course end-->
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<div class="price">Year of the OX </div>
+					
+					
+							<div class="month">      
+							  <ul>
+								<li>
+								  MARCH<br>
+								  <span style="font-size:15px">2021</span>
+								</li>
+							  </ul>
+							</div>
+
+							<ul class="weekdays">
+							  <li>Mo</li>
+							  <li>Tu</li>
+							  <li>We</li>
+							  <li>Th</li>
+							  <li>Fr</li>
+							  <li>Sa</li>
+							  <li><span style="color:red">Su</span></li>
+							</ul>
+
+							<ul class="days">  
+							  <li>1</li>
+							  <li>2</li>
+							  <li>3</li>
+							  <li>4</li>
+							  <li><div class="dropdown">
+									<a href="Transactions.html"span class="active" >5</a>
+									<div class="dropdown-content">
+									<a style="font-size: 20px">Sample only</a>
+									</div>
+									</div></li>
+							  <li>6</li>
+							  <li>7</li>
+							  <li>8</li>
+							  <li>9</li>
+							  <li>10</li>
+							  <li>11</li>
+							  <li>12</li>
+							  <li>13</li>
+							  <li>14</li>
+							  <li>15</li>
+							  <li>16</li>
+							  <li>17</li>
+							  <li>18</li>
+							  <li>19</li>
+							  <li>20</li>
+							  <li>21</li>
+							  <li>22</li>
+							  <li>23</li>
+							  <li>24</li>
+							  <li>25</li>
+							  <li>26</li>
+							  <li>27</li>
+							  <li>28</li>
+							  <li>29</li>
+							  <li>30</li>
+							  <li>31</li>
+							  <li><span style="color:gray">1</span></li>
+							  <li><span style="color:gray">2</span></li>
+							  <li><span style="color:gray">3</span></li>
+							  <li><span style="color:gray">4</span></li>
+							  <li><span style="color:gray">5</span></li>
+							  <li><span style="color:gray">6</span></li>
+							  <li><span style="color:gray">7</span></li>
+							  <li><span style="color:gray">9</span></li>
+							  <li><span style="color:gray">10</span></li>
+							  <li><span style="color:gray">11</span></li>
+							  <li><span style="color:gray">12</span></li>
+							</ul>
+						
+
+
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Daily Update</h5>
+							<p style="color: black">Information dessimination about COVID-19. </p>
+							<span><i class="fa fa-calendar"></i>2021</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							
+						</div>
+					</div>
+				</div>
+				<!-- course end-->
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<div class="price">Year of the OX </div>
+					
+					
+							<div class="month">      
+							  <ul>
+								<li>
+								  APRIL<br>
+								  <span style="font-size:15px">2021</span>
+								</li>
+							  </ul>
+							</div>
+
+							<ul class="weekdays">
+							  <li>Mo</li>
+							  <li>Tu</li>
+							  <li>We</li>
+							  <li>Th</li>
+							  <li>Fr</li>
+							  <li>Sa</li>
+							  <li><span style="color:red">Su</span></li>
+							</ul>
+
+							<ul class="days">  
+							  <li><span style="color:gray">29</span></li>
+							  <li><span style="color:gray">30</span></li>
+							  <li><span style="color:gray">31</span></li>
+							  <li>1</li>
+							  <li>2</li>
+							  <li>3</li>
+							  <li>4</li>
+							  <li>5</li>
+							  <li>6</li>
+							  <li>7</li>
+							  <li>8</li>
+							  <li>9</li>
+							  <li>10</li>
+							  <li>11</li>
+							  <li><div class="dropdown">
+									<a href="Transactions.html"span class="active" >12</a>
+									<div class="dropdown-content">
+									<a style="font-size: 20px">Sample only</a>
+									</div>
+									</div></li>
+							  <li>13</li>
+							  <li>14</li>
+							  <li>15</li>
+							  <li>16</li>
+							  <li>17</li>
+							  <li>18</li>
+							  <li>19</li>
+							  <li>20</li>
+							  <li>21</li>
+							  <li>22</li>
+							  <li>23</li>
+							  <li>24</li>
+							  <li>25</li>
+							  <li>26</li>
+							  <li>27</li>
+							  <li>28</li>
+							  <li>29</li>
+							  <li>30</li>
+							  <li>31</li>
+							  <li><span style="color:gray">1</span></li>
+							  <li><span style="color:gray">2</span></li>
+							  <li><span style="color:gray">3</span></li>
+							  <li><span style="color:gray">4</span></li>
+							  <li><span style="color:gray">5</span></li>
+							  <li><span style="color:gray">6</span></li>
+							  <li><span style="color:gray">7</span></li>
+							  <li><span style="color:gray">9</span></li>
+							</ul>
+						
+
+
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Daily Update</h5>
+							<p style="color: black">Information dessimination about COVID-19. </p>
+							<span><i class="fa fa-calendar"></i>2021</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							
+						</div>
+					</div>
+				</div>
+				<!-- course end-->
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<div class="price">Year of the OX </div>
+					
+					
+							<div class="month">      
+							  <ul>
+								<li>
+								  MAY<br>
+								  <span style="font-size:15px">2021</span>
+								</li>
+							  </ul>
+							</div>
+
+							<ul class="weekdays">
+							  <li>Mo</li>
+							  <li>Tu</li>
+							  <li>We</li>
+							  <li>Th</li>
+							  <li>Fr</li>
+							  <li>Sa</li>
+							  <li><span style="color:red">Su</span></li>
+							</ul>
+
+							<ul class="days">
+							  <li><span style="color:gray">26</span></li>
+							  <li><span style="color:gray">27</span></li>
+							  <li><span style="color:gray">28</span></li>
+							  <li><span style="color:gray">29</span></li>
+							  <li><span style="color:gray">30</span></li>							
+							  <li>1</li>
+							  <li>2</li>
+							  <li>3</li>
+							  <li>4</li>
+							  <li><div class="dropdown">
+									<a href="Transactions.html"span class="active" >5</a>
+									<div class="dropdown-content">
+									<a style="font-size: 20px">Sample only</a>
+									</div>
+									</div></li>
+							  <li>6</li>
+							  <li>7</li>
+							  <li>8</li>
+							  <li>9</li>
+							  <li>10</li>
+							  <li>11</li>
+							  <li>12</li>
+							  <li>13</li>
+							  <li>14</li>
+							  <li>15</li>
+							  <li>16</li>
+							  <li>17</li>
+							  <li>18</li>
+							  <li>19</li>
+							  <li>20</li>
+							  <li>21</li>
+							  <li>22</li>
+							  <li>23</li>
+							  <li>24</li>
+							  <li>25</li>
+							  <li>26</li>
+							  <li>27</li>
+							  <li>28</li>
+							  <li>29</li>
+							  <li>30</li>
+							  <li>31</li>
+							  <li><span style="color:gray">1</span></li>
+							  <li><span style="color:gray">2</span></li>
+							  <li><span style="color:gray">3</span></li>
+							  <li><span style="color:gray">4</span></li>
+							  <li><span style="color:gray">5</span></li>
+							  <li><span style="color:gray">6</span></li>
+							</ul>
+						
+
+
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Daily Update</h5>
+							<p style="color: black">Information dessimination about COVID-19. </p>
+							<span><i class="fa fa-calendar"></i>2021</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							
+						</div>
+					</div>
+				</div>
+				<!-- course end-->
+				
+				<!-- course -->
+				
+				<!-- course -->
+				
+				<!-- course -->
+
+				<!-- course -->
+			</div>
+
+
+	<!-- Courses section end -->
+
+<!-- Newslatter section -->
+	<section class="newslatter-section set-bg" data-setbg="img/newslatter-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="sec-title text-white sec-style-2">
+						<span>Poblacion | Dinas</span>
+						<h2>Stay updated</h2>
+					</div>
+				</div>
+				<div class="col-lg-9 nl-form-warp" class="image-bg">	
+					<img src="img/officials.jpg">		
+					<p>“Government exists to protect us from each other. Where 
+					government has gone beyond its limits is in deciding to protect us from ourselves.”
+					<br>― Ronald Reagan</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<br><br>
+		<div class="sec-title text-center">
+				<div class="sec-title text-white sec-style-2">
+					<h2>Progress Report</h2>
+				</div>
+			</div>
+		<!-- Progress section end -->
+		<div class="container" id="progress">
+			<div class="row text-white">
+				<div class="col-lg-3 col-md-6 cp-item">
+					<div class="circle-progress" data-cpid="id-1" data-cpvalue="89"></div>
+					<h3>Covid-19</h3>
+					<p>Covid patients recoveries</p>
+				</div>
+				<div class="col-lg-3 col-md-6 cp-item">
+					<div class="circle-progress" data-cpid="id-2" data-cpvalue="95"></div>
+					<h3>Food Distributions</h3>
+					<p>Capacity of food release in the households</p>
+				</div>
+				<div class="col-lg-3 col-md-6 cp-item">
+					<div class="circle-progress" data-cpid="id-3" data-cpvalue="75"></div>
+					<h3>Projects</h3>
+					<p>Number of project finish</p>
+				</div>
+				<div class="col-lg-3 col-md-6 cp-item">
+					<div class="circle-progress" data-cpid="id-4" data-cpvalue="40"></div>
+					<h3>Covid-19</h3>
+					<p>Covid-19 positive growth</p>
+				</div>
+			</div>			
+		</div>		
+			<!-- Progress section end -->
+	</section>
+	<!-- Newslatter section end -->
+
+	<!-- Footer section -->
+	<footer class="footer-section spad pb-0">
+		<div class="container">
+			<div class="text-center">
+				<a href="#" class="site-btn">Return <i class="fa fa-angle-right"></i></a>
+				</div>
+		<!-- Footer new -->
+			<br>
+			<br>
+			<br>
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="img/mission.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We want to have a better employment for the people and better education for the youth
+			To uplift economic progress and unite our people through effective governance, coupled with sincere service..</p> 
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		  
+		  
+     
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="img/vision.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.</p>
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		  
+		  <div class="col-lg-3">
+            <h3 class="footer-heading"><span></span></h3>
+            <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>                
+            </ul>
+          </div>
+		  
+		  <div class="col-lg-3">
+            <p class="mb-4"><img src="img/goal.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.</p>  
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		</div>
+		<!-- Footer end --> 
+			<div class="footer-bottom">
+				
+				<div class="social">
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-dribbble"></i></a>
+					<a href=""><i class="fa fa-behance"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+				</div>
+				<ul class="footer-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Reservation.html">Reservation</a></li>
+					<li><a href="Populations.html">Populations</a></li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				</ul>
+				<div class="footer-logo">
+					<a href="#">
+						<img src="img/footer-logo.png" alt="">
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<p class="text-white  text-center"> All rights reserved | 2021 <i class="fa fa-copyright" aria-hidden="true"></i> by <a href="" target="_blank" style="color:#f3e830;">Brgy. Poblacion Dinas</a>
+					</p>	
+				</div>
+				
+			</div>
+		</div>
+
+
+
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/custom.js"></script>
+
+
+</body>
+</html>

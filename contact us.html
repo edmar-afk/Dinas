@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Brgy.Poblacion Dinas</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="DNHS - Books">
+	<meta name="keywords" content="DNHS, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link rel="shortcut icon" href="img/favicon.png">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/dropdown.css"/>
+	<link rel= "stylesheet" href="css/css.css">
+
+</head>
+<body>
+	<div class="loader_bg">
+		<div class="loader"><img src="img/logos.gif" alt="" /></div>
+	</div>
+
+<!-- Header section -->
+	<header class="header-section">
+		<div class="header-warp">
+			<div class="container">
+				<a href="#" class="site-logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<!-- popup login -->
+				<div class="user-panel">
+				<a href="#" onclick ="openForm()">Login</a>
+					<div class="form-popup" id="myForm">
+						<script>
+						function validateFormEmail() {
+						  var a = document.myform.Username.value;
+						  var b = document.myform.Password.value;
+
+						var apos=a.indexOf("@");
+						var dotpos=a.lastIndexOf(".");
+
+						  if (apos<1||dotpos-apos<2){
+							alert("Invalid Email!");
+							return false;
+						  }
+						  else if (b == null||b == "") 
+						  {
+							alert("Invalid Password");
+							return false;
+						 
+						  }
+						}
+						</script>
+							<div class="form-container">
+								<a href="#" class="site-logo">
+									<img src="img/logo1.png" alt="">
+								</a>
+								<p>Please login</p>
+									<form name="myform" action="users/index.html" onsubmit="return validateFormEmail()" method="post">
+									<label for = "Username">DNHS | LIBRARY LOGIN</label>
+									<br>
+									<br>
+									<input type="text" id="Username" name="Username" placeholder="username@pdw.gov">
+									<br>
+									<label for="Password"></label>
+									<input type="password" id="Password" name="Password" placeholder="Enter password">
+									<br>
+									
+									  <button type="submit" class="btn">Login</button>
+									  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+									</form>
+							</div>
+					  					  
+					</div>
+				</div>
+				<!-- popup login end -->
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+
+				<ul class="main-menu">
+					<li><a href="index.html">Home</a></li>
+					
+					<li><div class="dropdown">
+						<a href="Reservation.html">Reservation</a>
+						  <div class="dropdown-content">
+						   <a href="LSI.html" target="_blank" style="font-size: 13px">(LSI) form</a>
+						  <a href="Reservation.html"style="font-size: 13px">Request</a>
+						  </div>
+						</div>
+					</li>	
+					<li><div class="dropdown">
+						<a href="Populations.html">Populations</a>
+						  <div class="dropdown-content">
+						  <a href="Populations.html"style="font-size: 13px">Officials</a>
+						  <a href="Populations.html"style="font-size: 13px">Local Map</a>
+						  <a href="charts/brgy.html" target="_blank"style="font-size: 13px">Brgy. Map</a>
+						  </div>
+						</div>
+					</li>
+					<li><a href="Contact Us.html" style="color:#f3e830">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+		<div class="container text-white">
+			<h3>Contact us</h3>
+		</div>
+	</section>
+	<!--  Page top end -->
+
+	<!-- Contact section -->
+	<section class="contact-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 contact-text">
+					<h3>About us</h3>
+					<p>We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.We want to have a better 
+					employment for the people and better education for the youth
+					To uplift economic progress and unite our people through effective governance, coupled with sincere service..</p>
+					<ul class="contact-info">
+						<li><span>Address:</span>Poblacion, Dinas, Zamboanga del sur</li>
+						<li><span>Phone:</span>+53 345 7953 32453</li>
+						<li><span>Email:</span>poblaciondinas@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-lg-8">
+					<form class="contact-form">
+						<div class="row">
+							<div class="col-md-12">
+								<input type="text" placeholder="Your Name">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Your E-mail">
+							</div>
+							<div class="col-md-6">
+								<input type="text" placeholder="Concern">
+							</div>
+							<div class="col-md-12">
+								<textarea placeholder="Message"></textarea>
+								<button class="site-btn">Send <i class="fa fa-angle-right"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
+
+	<footer class="footer-section spad pb-0">
+		<div class="container">
+			<div class="text-center">
+				<a href="#" class="site-btn">Return <i class="fa fa-angle-right"></i></a>
+			</div>
+			<!-- Footer new -->
+			<br>
+			<br>
+			<br>
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="img/mission.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We want to have a better employment for the people and better education for the youth
+			To uplift economic progress and unite our people through effective governance, coupled with sincere service..</p> 
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		  
+		  
+     
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="img/vision.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.</p>
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		  
+		  <div class="col-lg-3">
+            <h3 class="footer-heading"><span></span></h3>
+            <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>                
+            </ul>
+          </div>
+		  
+		  <div class="col-lg-3">
+            <p class="mb-4"><img src="img/goal.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.</p>  
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		</div>
+		<!-- Footer end -->  
+			<div class="footer-bottom">
+				
+				<div class="social">
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-dribbble"></i></a>
+					<a href=""><i class="fa fa-behance"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+				</div>
+				<ul class="footer-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Reservation.html">Reservation</a></li>
+					<li><a href="Populations.html">Populations</a></li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				</ul>
+				<div class="footer-logo">
+					<a href="#">
+						<img src="img/footer-logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p class="text-white  text-center"> All rights reserved | 2021 <i class="fa fa-copyright" aria-hidden="true"></i> by <a href="" target="_blank"style="color:#f3e830;">Brgy. Poblacion Dinas</a>
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jumpsec.js"></script>
+	<script src="js/custom.js"></script>
+
+
+
+</body>
+</html>

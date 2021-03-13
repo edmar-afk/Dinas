@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Brgy.Poblacion Dinas</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="DNHS - Books">
+	<meta name="keywords" content="DNHS, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link rel="shortcut icon" href="img/favicon.png">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/dropdown.css"/>
+	<link rel="stylesheet" href="css/modal.css"/>
+	<link rel="stylesheet" href="css/dropsearch.css"/>
+	<link rel= "stylesheet" href="css/css.css">
+	
+
+</head>
+<body>
+	<div class="loader_bg">
+		<div class="loader"><img src="img/logos.gif" alt="" /></div>
+	</div>
+
+<!-- Header section -->
+	<header class="header-section" id="header">
+		<div class="header-warp">
+			<div class="container">
+				<a href="#" class="site-logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<!-- popup login -->
+				<div class="user-panel">
+				<a href="#" onclick ="openForm()">Login</a>
+					<div class="form-popup" id="myForm">
+						<script>
+						function validateFormEmail() {
+						  var a = document.myform.Username.value;
+						  var b = document.myform.Password.value;
+
+						var apos=a.indexOf("@");
+						var dotpos=a.lastIndexOf(".");
+
+						  if (apos<1||dotpos-apos<2){
+							alert("Invalid Email!");
+							return false;
+						  }
+						  else if (b == null||b == "") 
+						  {
+							alert("Invalid Password");
+							return false;
+						 
+						  }
+						}
+						</script>
+							<div class="form-container">
+								<a href="#" class="site-logo">
+									<img src="img/logo1.png" alt="">
+								</a>
+								<p>Please login</p>
+									<form name="myform" action="users/index.html" onsubmit="return validateFormEmail()" method="post">
+									<label for = "Username">DNHS | LIBRARY LOGIN</label>
+									<br>
+									<br>
+									<input type="text" id="Username" name="Username" placeholder="username@pdw.gov">
+									<br>
+									<label for="Password"></label>
+									<input type="password" id="Password" name="Password" placeholder="Enter password">
+									<br>
+									
+									  <button type="submit" class="btn">Login</button>
+									  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+									</form>
+							</div>
+					  					  
+					</div>
+				</div>
+				<!-- popup login end -->
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+
+				<ul class="main-menu">
+					<li><a href="index.html">Home</a></li>
+					
+					<li><div class="dropdown">
+						<a href="Reservation.html">Reservation</a>
+						  <div class="dropdown-content">
+						   <a href="LSI.html" target="_blank" style="font-size: 13px">(LSI) form</a>
+						  <a href="Reservation.html"style="font-size: 13px">Request</a>
+						  </div>
+						</div>
+					</li>	
+					<li><div class="dropdown">
+						<a href="Populations.html"style="color:#f3e830">Populations</a>
+						  <div class="dropdown-content">
+						  <a href="#officials"style="font-size: 13px">Officials</a>
+						  <a href="#localmap"style="font-size: 13px">Local Map</a>
+						  <a href="charts/brgy.html" target="_blank"style="font-size: 13px">Brgy. Map</a>
+						  </div>
+						</div>
+					</li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+	
+
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+		<!-- search section -->
+			<div class="search-container">
+				
+			</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="sec-title text-white sec-style-2">
+						<span>Keep Safe</span>
+						<h2>Stay updated</h2>
+					</div>
+				</div>
+
+				<div class="col-lg-9 nl-form-warp">	
+							<div class="container"> 
+								<div class="dropdowns">
+								  <input type="text" placeholder="Search" id="myInput1" onkeyup="filterFunction()">
+									<div id="myDrop" class="dropdown-contents" class="modal modal_multi" class="modal-content">
+										<a href="charts/orchids.html" target="_blank">Alap Mohaijhie: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Alap Abas: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Alap Noraisa: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Alap Monera: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Alap Moamar: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Alap Ysrah: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Paquel Esmael: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Paquel Aziza: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Paquel Waffa: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Paquel Jasmen: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Paquel Reffe: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Ubpon Sultan: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Ubpon Intan: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Ubpon Abdulaziz: Purok Orchids</a>
+										<a href="charts/orchids.html" target="_blank">Ubpon SittieFarhana: Purok Orchids</a>
+									</div>
+								</div>
+							</div>
+
+					<p> Search the specific person you want to find and type the name of the person in the empty box.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Search section end -->
+		<br>
+		<br>
+		<br>
+		
+			<div class="container">
+				<h5>PAHIBALO!</h5><br>
+					MGA PAHIBALO PARA SA KASAYURAN SA TANAN
+					<div class="row">
+						<div class="col-md-12">
+							<div class="img-text">
+							<br>
+								<p style="color:black; font-size: 14px">1. MANDATORY WEARING OF FACE MASK IN PUBLIC PLACES.
+								ANG TANAN GIAWHAG SA PAGSUOT UG FACE MASK KUNG MO GAWAS SA BALAY UG SA MGA PAMPUBLIKONG LUGAR. ANG MASAKPAN NGA MING SUPAK 
+								SA MAONG MODIFIED GENERAL COMMUNITY QUARANTINE GUIDELINES (MGCQ), ADUNAY SILOT NGA: 
+								FIRST OFFENSE: ADUNAY PENALTY NGA 300.00 PESOS UG 4 KA ORAS NGA COMMUNITY SERVICE O PAGNGLIMPYO SA MGA PAMPUBLIKONG LUGAR
+								SECOND OFFENSE: ADUNAY PENALTY NGA 500.00 PESOS UG 4 KA ORAS NGA COMMUNITY SERVICE O PAGPANGLIMPYO SA MGA PAMPUBLIKONG LUGAR.
+								THIRD OFFENSE: ANG TANANG MAKALAPAS O MING SUPAK SA MAONG BALAOD MAGAATUBANG SA MGA KASONH CRIMINAL OR ADMINISTRATIVE PROSECUTION 
+								UNDER R.A 9271 OTHERWISE KNOEN AS THE QUARANTINE ACT OF 2004, R.A 11469  (BAYANIHAN LAW) UG UBAN PANG BALAUD.</p>
+							</div>
+						</div>
+						<div class="col-md-12">
+								<p style="color:black; font-size: 14px">2. RETURNING AND STRANDED INDIVIDUALS (LSIs).
+								ANG TANANG OFW UG LSI NGA MO ULI-AY SA ATUNG LUGAR GIKINAHANGLAN NGA MO AGI UG 14 DAYS QUARANTINE UG
+								KINAHANGLAN NGA MO REPORT DAYON SA DOH PARA SA MGA SAKTONG PAMAAGI.
+								INIG MAHUMAN SA OFW UG LSI ANG 14 DAYS QUARANTINE HATAGAN SILA SA DOH UG CERTIFICATE OF COMPLETION.
+								ANG MGA OFW UG LSI NGA WALA MING SUNOD SA MGA PAMAAGI O MING SUPAK ADUNAY SILOT NGA PAGA-ATUBANGON. 
+								GI PAHIMANGNOAN ANG TANANG PAMILYA NGA ADUNAY MOAABOTAY NGA MIYEMBRO SA PAMILYA KINAHANGLAN NGA 
+								MAGPAHIBALO SA BARANGAY 3 KAADLAW SA DILI PA MOABOT. ANG MGA PAMILYA NGA ADUNAY MIYEMBRO NGA OFW 
+								UG LSI NGA WALA MING SUNOD SA MAONG BALAOD MAGAATUBANG USAB UG SILOT.</p>
+								</p>
+						</div>
+					</div>				
+			</div>
+
+	
+	<!-- brgy map -->
+			<br>
+			<br>
+			<br>
+	<!-- brgy map -->
+	<section class="newslatter-section set-bg" data-setbg="img/newslatter-bg.jpg" id="localmap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="sec-title text-white sec-style-2">
+						<span>Brgy. Poblacion</span>
+						<h2>Local Map</h2>
+					</div>
+				</div>
+
+				<div class="col-lg-9 nl-form-warp">					
+					<p><b>Barangay Poblacion consist of 7 purok the Sunflower, Sampaguita, Santan, Chandelier, Orchids, Doňa luz, 
+					and Camia. the purok data will be updated every 6 months. </b></p>
+				</div>
+			</div>
+		</div>
+	
+	<!-- news latter section end -->
+				<div class="col-lg-12">
+					<div class="course-item featured">
+						<img src="img/map/purok.png" alt="Workplace" usemap="#workmap" width="1347" height="675">
+						<map name="workmap">
+
+							<area shape="circle" coords="151,164,33"class="myBtn_multi"><!--evacuations -->
+							<area shape="circle" coords="361,349,33"class="myBtn_multi"><!-- sunflower -->
+							<area shape="circle" coords="212,504,33"class="myBtn_multi"><!-- sampaguita -->
+							<area shape="circle" coords="670,382,33"class="myBtn_multi"><!-- Chandelier -->
+							<area shape="circle" coords="738,249,33"class="myBtn_multi"><!-- Camia -->
+							<area shape="circle" coords="868,450,33"class="myBtn_multi"><!-- orchids -->
+							<area shape="circle" coords="1158,372,33"class="myBtn_multi"><!-- santan -->
+							<area shape="circle" coords="1183,185,33"class="myBtn_multi"><!-- donaluz -->
+
+							<!-- evacuations -->
+							<div class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>EVACUATION</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/evac.png"width="1215" height="560">
+									<div class="modal-footer">
+									  <h3>Local map </h3>
+									</div>
+								</div>
+
+							</div>
+							<!-- sunflower -->
+							<div class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>PUROK SUNFLOWER</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/sunflower.png"width="1215" height="560">
+									<div class="modal-footer">
+									 <h4>Click here!</h4>	
+									<a href="charts/sunflower.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
+
+							</div>
+							<!-- sampaguita -->
+							<div  class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									 <h2>PUROK SAMPAGUITA</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/sampaguita.png"width="1215" height="560">
+									<div class="modal-footer">
+									  <h4>Click here! </h4>	
+									<a href="charts/sampaguita.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
+
+							</div>
+							<!-- Chandelier -->
+							<div  class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>PUROK CHANDELIER</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/chandelier.png"width="1215" height="560">
+									<div class="modal-footer">
+									  <h4>Click here! </h4>	
+									<a href="charts/chandelier.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
+
+							</div>
+							<!-- Camia -->
+							<div  class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>PUROK CAMIA</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/camia.png"width="1215" height="560">
+									<div class="modal-footer">
+									<h4>Click here! </h4>	
+									<a href="charts/camia.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>								
+									</div>
+								</div>
+
+							</div>
+							<!-- Orchids -->
+							<div  class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>PUROK ORCHIDS</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/orchids.png"width="1215" height="560">
+									<div class="modal-footer">
+									  <h4>Click here! </h4>	
+									<a href="charts/orchids.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
+
+							</div>
+							<!-- santan -->
+							<div  class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>PUROK SANTAN</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/santan.png"width="1215" height="560">
+									<div class="modal-footer">
+									  <h4>Click here! </h4>	
+									<a href="charts/santan.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
+
+							</div>
+							<!-- Donaluz -->
+							<div  class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<div class="modal-header">
+									  <h2>PUROK DOÑA LUZ</h2>
+									  <span class="close close_multi">&times;</span>
+									</div>
+									<img src="img/map/donaluz.png"width="1215" height="560">
+									<div class="modal-footer">
+									  <h4>Click here! </h4>	
+									<a href="charts/donaluz.html" target="_blank" class="site-btn">Purok 
+									<i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			<br>
+			<br>
+			<div class="text-center" id="officials">
+						<a href="#header" class="site-btn">Return<i class="fa fa-angle-right"></i></a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<!-- official section -->
+			<div class="sec-title text-center">
+				<div class="sec-title text-white sec-style-2">
+					<h2>Barangay Officials</h2>
+					<span>True leaders have a servant's heart</span>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Captain</h4>
+					<p style="color:#f3e830;">Hon. Cristina Chavez </p>
+					<p style="color: #fff;" style="font-size:90%;"> <br><i class="fa fa-user-md" style="font-size: 28px" ></i> : Medical Doctor at Chavez Medical Clinic 
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : Studied at University of the East (UE)
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : Studied at Saint Columban College
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : Studied at De La Salle Health Sciences
+					</p>
+						
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/chavez.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div><br>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Edward Allere </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/allere.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Geoffrey Glang </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/glang.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Elma Benolirao </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/benolirao.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Pedro Bernante </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/bernante.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Ronnie Baluarte </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/baluarte.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Richard Aguire </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/aguire.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Kagawad</h4>
+					<p style="color:#f3e830;">Hon. Namraida Jammang </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/jammang.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Treasurer</h4>
+					<p style="color:#f3e830;">Melisa  Cobar</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/melisa.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Secretary</h4>
+					<p style="color:#f3e830;">Sarah May Lamparas</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/sarah.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Record keeper</h4>
+					<p style="color:#f3e830;">Jeaphy Rubio</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/epay.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Barangay Day Care Worker</h4>
+					<p style="color:#f3e830;">Jocelyn B. Cabuco </p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : +639123456789
+					<br><i class="fa fa-home" style="font-size: 26px"></i> : Poblacion, Dinas Zambo. sur
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/officials/jo.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<hr>
+			<br>
+			<br>
+			<div class="text-center" id="officials">
+						<a href="#header" class="site-btn">Return<i class="fa fa-angle-right"></i></a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="sec-title text-center">
+				<div class="sec-title text-white sec-style-2">
+					<h2>Sangguniang Kabataan</h2>
+					<span>True leaders have a servant's heart</span>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Chairman</h4>
+					<p style="color:#f3e830;">Daryl T. Torres</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09462445091
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok Doña Luz, Poblacion, Dinas
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/1.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Kagawad</h4>
+					<p style="color:#f3e830;">Samin, Haidal Ompoy</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09122912696
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok Sampaguita, Pob. Dinas ZDS,
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/2.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Kagawad</h4>
+					<p style="color:#f3e830;">Gabato  Aprix Ignacio</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09166201436
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok Doña Luz, Poblacion, Dinas
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/3.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Kagawad</h4>
+					<p style="color:#f3e830;">Al-os Jassen</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09515722730
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok sampaguita, Poblacion, Dinas Zds
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/4.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Kagawad</h4>
+					<p style="color:#f3e830;">Pajota  Ariel  Regadio</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09166201436
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok Rose, West Migpulao, Dinas Zds
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/5.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Kagawad</h4>
+					<p style="color:#f3e830;">Marilou Magna-ong</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09455935849
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok Rose, West Migpulao, Dinas Zds
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/6.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Kagawad</h4>
+					<p style="color:#f3e830;">Pongasi Robert Asoy</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09486783052
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok sunflower, Poblacion, Dinas
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/7.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Treasurer</h4>
+					<p style="color:#f3e830;">Pausanos Marilou Montano</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09455935849
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok chandelier, Poblacion, Dinas Zds
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/8.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>
+			<div class="container">	
+				<div class="row">
+				<div class="col-lg-7 about-text">
+					<h4 style="color: #fff;">Sk Secretary</h4>
+					<p style="color:#f3e830;">Cabuco Rica Dali-on</p>
+					<p style="color: #fff;" style="font-size:90%;"></i>
+					<br><i class="fa fa-graduation-cap" style="font-size: 21px"></i> : 
+					<br><i class="fa fa-address-book" style="font-size: 21px"></i> : 09486783052
+					<br><i class="fa fa-home" style="font-size: 26px"></i>: Purok Orchids, Poblacion, Dinas
+					</p>	
+				</div>
+				<div class="col-lg-5">
+					<figure class="pt-lg-0 pt-5">
+						<img src="img/sk/9.jpg" alt="">
+					</figure>
+				</div>
+				</div>
+			</div>		
+	</section>
+	<!-- official section end -->	
+
+	<!-- Footer section -->
+	<footer class="footer-section spad pb-0">
+		<div class="container">
+			<div class="text-center">
+				<a href="#header" class="site-btn">Return <i class="fa fa-angle-right"></i></a>
+				</div>
+		<!-- Footer new -->
+			<br>
+			<br>
+			<br>
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="img/mission.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We want to have a better employment for the people and better education for the youth
+			To uplift economic progress and unite our people through effective governance, coupled with sincere service..</p> 
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		  
+		  
+     
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="img/vision.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.</p>
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		  
+		  <div class="col-lg-3">
+            <h3 class="footer-heading"><span></span></h3>
+            <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>                
+            </ul>
+          </div>
+		  
+		  <div class="col-lg-3">
+            <p class="mb-4"><img src="img/goal.png" alt="Image" class="img-fluid"></p>
+            <p style="color:#fff;">We envision the Barangay to be Peaceful, Healthy and Progressive
+					Through the sincere efforts of the Barangay Officials with the Unity of the people.</p>  
+            <p><a href="#"style="color:#f3e830;">Learn More</a></p>
+          </div>
+		</div>
+		<!-- Footer end -->  
+			<div class="footer-bottom">
+				
+				<div class="social">
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-dribbble"></i></a>
+					<a href=""><i class="fa fa-behance"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+				</div>
+				<ul class="footer-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Reservation.html">Reservation</a></li>
+					<li><a href="Populations.html">Populations</a></li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				</ul>
+				<div class="footer-logo">
+					<a href="#">
+						<img src="img/footer-logo.png" alt="">
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<p class="text-white  text-center"> All rights reserved | 2021 <i class="fa fa-copyright" aria-hidden="true"></i> by <a href="" target="_blank" style="color:#f3e830;">Brgy. Poblacion Dinas</a>
+					</p>	
+				</div>
+				
+			</div>
+		</div>
+
+
+
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/jumpsec.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/custom.js"></script>
+
+
+</body>
+</html>

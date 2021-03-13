@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Brgy.Poblacion Dinas</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Brgy.Poblacion Dinas">
+	<meta name="keywords" content="Brgy.Poblacion Dinas, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link rel="shortcut icon" href="image/logos.png">
+	<link rel="stylesheet" href="dropitem.css">
+	<link rel="stylesheet" href="css/form.css">
+
+
+</head>
+
+<body>
+	<div class="navbar">
+	  <a href="index.html">Statical Status 📈</a>
+	  <a href="data_entry.html">Data Entry 💾</a>
+	  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()" class="active">Files 📁
+	  </button>
+	  <div class="dropdown-content" id="myDropdown">
+		<a href="docs1.html">RBI 🗎</a>
+		<a href="docs2.html">Documents 2 🗎</a>
+	  </div>
+	  </div> 
+	  <a href="request.html">Reserve 🗎</a>
+	  <a href="../index.html" class="btn" style="float: right">Logout</a>
+	</div>
+	
+	<br><br>
+        <br><br> 
+	
+	
+	
+	<div class="row">
+	  <div class="col-75">
+		<div class="container">
+			<img src="image/logos.png" style="float:right" alt="header"width="45"height="45">
+			<h3>Family Profile docx</h3>
+			<div class="row">
+				<table class="list" id="employeeList">
+							<thead>
+								<tr>
+									<th>File Type</th>
+									<th>File name</th>
+									<th>File Size</th>
+									<th>Download</th>
+									<th>Print</th>
+								</tr>
+							</thead>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>Ordchids.docx</td>
+									<td>89.9kb</td>
+									<td><a href="docx/orchids.docx"style="text-decoration: none; font-size: 22px">📥 </a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>Camia.docx</td>
+									<td>4.72Mb</td>
+									<td><a href="docx/camia.docx"style="text-decoration: none; font-size: 22px">  📥 </a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>Chandelier.docx</td>
+									<td>6.52Mb</td>
+									<td><a href="docx/chandelier.docx"style="text-decoration: none; font-size: 22px">  📥 </a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>DoΓ±aluz.docx</td>
+									<td>4.83Mb</td>
+									<td><a href="docx/donaluz.docx"style="text-decoration: none; font-size: 22px">  📥 </a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>Sampaguita.docx</td>
+									<td>3.0Mb</td>
+									<td><a href="docx/sampaguita.docx"style="text-decoration: none; font-size: 22px"> 📥</a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>Santan.docx</td>
+									<td>25.3kb</td>
+									<td><a href="docx/santan.docx"style="text-decoration: none; font-size: 22px"> 📥</a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+							<tbody>	
+								<tr>
+									<td><a style="text-decoration: none; font-size: 30px"> 🗎</a></td>
+									<td>Sunflower.docx</td>
+									<td>38.4Mb</td>
+									<td><a href="docx/sunflower.docx"style="text-decoration: none; font-size: 22px">  📥 </a></td>								
+									<td><button onclick="window.print ();"> 🖶 </button></td>
+								</tr>
+							</tbody>
+				</table>
+			  
+			</div>
+
+		</div>
+	  </div>
+	  <div class="col-25">
+		<div class="container">
+			
+			<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+				<br>
+						<div>
+							<label>Save files</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+							<input type="file" id="myFile" name="filename">
+						</div>
+						<div>
+						
+							
+
+							<div  class="form-action-buttons">
+							<input type="submit" value="Save" class="btn">						
+							</div>
+						
+						</div>
+			</form>
+		 </div>
+	   </div>
+    </div>
+
+
+
+<script src="js/script.js"></script>
+<script src="js/dropitem.js"></script>
+
+</body>
+</html>
